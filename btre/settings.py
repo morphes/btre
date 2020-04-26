@@ -145,3 +145,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'noreply@brillenhof.com'
 EMAIL_HOST_PASSWORD = 'oth0Quae'
 EMAIL_USE_TLS = True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
